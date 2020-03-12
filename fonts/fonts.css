@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "HelveticaRegular";
+    src: url("../fonts/HelveticaRegular/HelveticaRegular.eot");
+    src: url("../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "HelveticaBold";
+    src: url("../fonts/HelveticaBold/HelveticaBold.eot");
+    src: url("../fonts/HelveticaBold/HelveticaBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaBold/HelveticaBold.woff") format("woff"),
+    url("../fonts/HelveticaBold/HelveticaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SansusWebissimoRegular";
+    src: url("../fonts/SansusWebissimoRegular/SansusWebissimoRegular.eot");
+    src: url("../fonts/SansusWebissimoRegular/SansusWebissimoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SansusWebissimoRegular/SansusWebissimoRegular.woff") format("woff"),
+    url("../fonts/SansusWebissimoRegular/SansusWebissimoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
