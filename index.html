@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="reset/reset.css" />
-    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fonts-word/fonts.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -22,18 +26,18 @@
                 <h1>Bank</h1>
               </div>
               <nav class="nav-account">
-                <ul>
+                <ul class="nav-ul">
                   <li><a href="#">My account</a></li>
                   <li><a href="#">Settings</a></li>
-                  <li><a href="#">Logout</a></li>
+                  <li><a class="active" href="#">Logout</a></li>
                 </ul>
               </nav>
             </div>
-            
+
             <div class="menu">
               <nav class="nav-menu">
                 <ul>
-                  <li><a href="#">Home</a></li>
+                  <li><a class="active" href="#">Home</a></li>
                   <li><a href="#">About us</a></li>
                   <li><a href="#">Our services</a></li>
                   <li><a href="#">Deposits</a></li>
@@ -41,11 +45,73 @@
                   <li><a href="#">Contact us</a></li>
                 </ul>
               </nav>
-              <a href="#">Call us: (2457) 555 222 333</a>
+              <div class="backgrond-tel">
+                <a href="#">Call us: (2457) 555 222 333</a>
+              </div>
             </div>
           </header>
 
-          <main class="main"></main>
+          <main class="main">
+            <div class="banner-login">
+              <div class="banner">
+                <h1>All digital gold is</h1>
+                <h2>
+                  by visible gold in vault <br />
+                  audited every day.
+                </h2>
+              </div>
+              <div class="login">
+                <form class="form" action="#">
+                  <h1 class="icon-user1">Custamer login</h1>
+                  <input class="log" type="text" placeholder="User name" />
+                  <input class="pass" type="password" placeholder="Password" />
+                  <div class="form-flex">
+                    <div class="checked-text">
+                      <input type="checkbox" class="checked" /><label
+                        for="checked"
+                        >Remember me</label
+                      >
+                    </div>
+                    <p>Forget your password</p>
+                    <button class="btn btn1">Login in</button>
+                    <h2>Not a member?</h2>
+                    <button class="btn btn2">Open an account</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="spevialities-works">
+              <div class="spevialities">
+                <h1>Our Spevialities</h1> 
+                <ul>
+                  <li>Lorem Ipsum is simply dummy text for demo</li>
+                  <li>Lorem Ipsum is simply dummy text for demo</li>
+                  <li>Lorem Ipsum is simply dummy text for demo</li>
+                  <li>Lorem Ipsum is simply dummy text for demo</li>
+                  <li>Lorem Ipsum is simply dummy text for demo</li>
+                </ul>
+              </div>
+
+              <div class="works">
+                <h1>How it works</h1>
+                <div class="boxs">
+                  <div class="img-text">
+                    <img src="./img/Group 1.png" alt="photo">
+                    <p>Check Value</p>
+                  </div>
+                  <div class="img-text">
+                    <img src="./img/gold copy.png" alt="photo">
+                    <p>Buy gold</p>
+                  </div>
+                  <div class="img-text">
+                    <img src="./img/Group 2 copy 3.png" alt="photo">
+                    <p>Make payment</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
         </div>
         <footer class="footer"></footer>
       </div>

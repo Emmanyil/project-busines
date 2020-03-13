@@ -4,6 +4,39 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?iup5q6");
+  src: url("fonts/icomoon.eot?iup5q6#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?iup5q6") format("truetype"),
+    url("fonts/icomoon.woff?iup5q6") format("woff"),
+    url("fonts/icomoon.svg?iup5q6#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user1:before {
+  content: "\e901";
+  padding-right: 10px;
+}
+
 body {
   color: white;
   font-family: "HelveticaRegular", sans-serif;
@@ -28,11 +61,11 @@ a {
   background: #e8e8e9;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
   height: calc(100% - 60px);
   padding: 0 30px;
 }
@@ -80,6 +113,14 @@ a {
   color: #939393;
 }
 
+.nav-account .active {
+  color: #c42d21;
+}
+
+.nav-account a:hover {
+  color: #c42d21;
+}
+
 .nav-account a::after {
   content: "";
   background: #939393;
@@ -90,26 +131,154 @@ a {
 }
 
 .menu {
-  background: url(./img/Layer\ 1.png) 100% no-repeat;
+  background: #b83c2d;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+}
+
+.nav-menu {
+  padding: 10px 0 10px 0;
+  position: relative;
 }
 
 .nav-menu a {
   font-size: 16px;
+  padding: 9px 15px 12px 20px;
+  margin-left: -4px;
+  transition: all 0.4s;
 }
 
-.menu > a {
+.nav-menu .active {
+  background: black;
+  border-radius: 10px 0 0 10px;
+}
+
+.nav-menu a:hover {
+  background: black;
+}
+
+.backgrond-tel a {
   font-size: 18px;
   font-weight: bold;
+}
+.backgrond-tel {
+  background: black;
+  border-radius: 0 10px 10px 0;
+  padding: 10px 20px 10px 50px;
 }
 
 /* MAIN */
 .main {
+  padding-top: 20px;
   flex-grow: 1;
   width: 100%;
+}
+
+.banner-login {
+  display: flex;
+  justify-content: space-between;
+  /* max-width: 100%; */
+  min-height: 308px;
+}
+
+.banner {
+  background: url(./img/banner.png) no-repeat;
+  background-size: contain;
+  width: 675px;
+  border-radius: 5px;
+  padding: 78px 0 0 46px;
+  font-family: "Bebas Neue", cursive;
+  text-transform: uppercase;
+}
+
+.banner h1 {
+  font-size: 42px;
+  color: #f6ee79;
+}
+
+.banner h2 {
+  padding-top: 60px;
+  font-size: 28px;
+}
+
+.login {
+  background: url(./img/login.png) no-repeat;
+  background-size: contain;
+  width: 270px;
+  border-radius: 5px;
+}
+
+.form {
+  padding: 15px 30px;
+}
+
+.icon-user1 {
+  padding-bottom: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.log , .pass {
+  margin: 0 0 10px;
+  width: 100%;
+  padding: 5.5px 15px;
+}
+
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checked-text {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+
+
+.form-flex .btn {
+  background: #df4234;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8.5px 15px 5px;
+  border-radius: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.form-flex .btn:hover{
+  background: #ffffff;
+  color: #df4234;
+}
+
+.btn1{
+  box-shadow: 0 25px 0  rgba(107, 107, 107, 0.1);
+}
+
+.form-flex h2{
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.spevialities-works{
+  display: flex;
+  /* width: 100%; */
+}
+
+.spevialities , .spevialities li{
+  color: black;
+  display: block;
+}
+
+.boxs{
+  display: flex;
+  justify-content: space-between;
 }
 
 /* FOOTER */
